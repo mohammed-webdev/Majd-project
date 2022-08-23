@@ -1,0 +1,14 @@
+{
+    "app_title": "عنوان",
+    "welcome_message": "اهلا بكم",
+    "days_since_release": "لقد مرت {{number_of_days}} أيام على إصدار هذا الفيديو",
+    "home":"الصفحه الرئيسيه",
+    "links": "روابط",
+    "our_works": "اعمالنا",
+    "news": "أخبار",
+    "about": "حول",
+    "contact": "اتصل بنا",
+    "language": "اللغة",
+    "find_out": "أكتشف اكثر",
+    "about_us": "من نحن؟"
+  }

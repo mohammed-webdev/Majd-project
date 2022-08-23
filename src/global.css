@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+body{
+    background-color: #1c1c1c;
+    width: 100%;
+}
+
+.logo{
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    color:azure
+}
+
+.background-navbar{
+    
+    background-color:rgba(0, 0, 0, 0.9);
+ 
+    border-radius: 10px;
+    
+}
+.navbar-home{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:50%;
+    z-index: 5;
+    transform: translateX(-50%);
+}
+.nav-link:focus,.nav-link:active{
+    color:white;
+}
+.hero-section{
+    position: relative;
+    height: 100vh;
+}
+.video-home-page{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+.find-out{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    z-index: 2;
+    border: 1px solid beige;
+    border-radius: 5px;
+    color:beige;
+    padding:8px;
+    cursor: pointer;
+    box-shadow: 0 0 4px wheat;
+    transition: 0.3s;
+}
+.find-out:hover{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-62%);
+    
+}
+.arrow{
+    position: absolute;
+    left:50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.arrowUp{
+    display: none;
+    position: fixed;
+    right:50px;
+    bottom: 50px;
+    z-index: 10;
+}
+.display-logo{
+    display: none;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    color:azure
+}
+
+
+.navbar-font-color li{
+    position: relative;
+}
+.navbar-font-color li::after{
+    content: "";
+position: absolute;
+left:0;
+bottom: 0;
+width: 0;
+height: 3px;
+background-color: white;
+transition: 0.3s;
+}
+.navbar-font-color li:hover::after{
+    width: 100%;
+}
+.navbar-font-color .drop::after{
+    content: "";
+position: absolute;
+left:0;
+bottom: 0;
+width: 0;
+height: 3px;
+background-color: white;
+transition: 0.3s;
+}
+.navbar-font-color .drop:hover::after{
+    width: 100%;
+}
+.navbar-font-color li{
+    text-align: center;
+}
+.navbar-font-color li a{
+    color: wheat;
+    font-family: 'Bellota', cursive;
+    font-size: 22px;
+}
+.navbar-font-color li a:hover{
+    color:white;
+}
+
+.dropdown-bg-color{
+    background-color: rgba(0, 0, 0, 0.9);
+   
+}
+
+.dropdown-bg-color li button {
+    color:wheat;
+    font-family: 'Bellota', cursive;
+    font-size: 22px;
+}
+.dropdown-bg-color li span:hover{
+    background-color: transparent ;
+ }
+
+ 
+
+
+
+
+
+
+/* section two  */
+
+
+
+.leftImg img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-aboutus h3{
+    color:#a0a0a0
+}
+
+.right-aboutus p{
+    color: beige;
+}
+
+.right-aboutus h3 , .right-aboutus p{
+    font-family: 'Bellota', cursive;
+}
+
+
+/* secction our achievements */
+
+.title h1{
+    color:beige;
+    font-family: 'Bellota', cursive;
+
+}
+.title{
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 50px 0;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+   background: linear-gradient(to right,red,green,gold);
+   transition: 0.3s;
+}
+.title:hover::after{
+    width: 100%;
+}
+.carousel-container{
+   
+    border-radius: 10px;
+    border:1px solid wheat;
+    box-shadow: 0px 0px 4px wheat;
+}
+.carousel-item img{
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* brief section  */
+
+.right-brief-section p{
+    color:wheat
+}
+
+
+/* footer */
+.bg-footer{
+    background-color: black;
+    padding:30px;
+}
+footer .address{
+    color:beige;
+    font-family: 'Bellota', cursive;
+    text-align: center;
+}
+
+
+footer .logo-footer{
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    color:azure;
+
+}
+
+footer .contact{
+    color:beige;
+    font-family: 'Bellota', cursive;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    .display-logo{
+        display: inline;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar-font-color li a{
+        font-size: 20px;
+    }
+    .right-brief-section{
+        margin-top: 30px;
+    }
+    .hero-section{
+        height: 50vh;
+        width: 100%;
+    }
+    .dropdown-bg-color{
+        background-color: rgba(245, 222, 179, 0.267);
+       
+    }
+    .background-navbar{
+        margin-top: 10px;
+    }
+  
+}
+
+.allHeight{
+   
+    height: calc(100vh - 229.545px - 80.98px - 63.997px); /*logo-size / navbar-size / footer-size*/
+
+ 
+}
+.releativ{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.allHeight video{
+    position: absolute;
+    
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+@media screen and (max-width:768px) {
+    .leftImg{
+        text-align: center;
+    }
+    .leftImg img{
+        width: 60%;
+    }
+    .right-aboutus h3{
+        margin-top: 30px;
+    }
+    
+    .arrow{
+        display: none;
+    }
+    .hero-section{
+        height: 40vh;
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width:992px) {
+    .background-navbar{
+    background-color: transparent;
+    }
+    .background-ul-color{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding:0 30px;
+        border-radius: 10px;
+        gap: 30px;
+        
+    }
+  
+}
